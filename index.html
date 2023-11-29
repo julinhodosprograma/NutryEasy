@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA TMB</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<link href="favicon.ico" rel="icon" type="image/png">
+    <body>
+        
+        <!--tituo-->
+        <header>
+            <div class="titulo"><h2>Bem vindo ao <span id="nome">NutriEasy</span></h2></div>
+        </header>
+        <div class="block">
+            <!--topo-->
+            <div class="topo"><h3>1º ETAPA- Como determinar a taxa de metabolismo basal (TMB)</h3></div> 
+        
+            <!--subtitulo-->
+           <div class="subtitulo"><p>É o total de calorias gastas para manter as funções vitais, como os batimentos cardíacos, a pressão arterial e 
+                a temperatura corporal:</p><br></div> 
+                
+            <!--primeiro cauculo basico-->    
+            <div class="calc">
+                <h4>Sexo:</h4>
+                    <input type="radio" name="sexo" value="homem" id="homem" checked/>
+                    <label for="homem">Homem</label>
+                    <input type="radio" name="sexo" value="mulher" id="mulher"/> 
+                    <label for="mulher">Mulher</label><br/>
+                <h4>Peso:</h4><input id="peso" type="number"/><br/>
+                <h4>Altura (em cm):</h4><input id="altura" type="number"/><br/>
+                <h4>Idade:</h4><input id="idade" type="number"/><br/>
+                <h4>Nível de atividade física:</h4>
+                    <div class="atividades2">
+                    <input type="radio" name="atividade" value="nenhuma" id="nenhuma" checked/>
+                    <label for="nenhuma">Sedentário</label><br/>
+                    <input type="radio" name="atividade" value="leve" id="leve"/>
+                    <label for="leve">Atividade física leve</label><br/>
+                    <input type="radio" name="atividade" value="moderada" id="moderada"/>
+                    <label for="moderada">Atividade física moderada</label><br/>
+                    <input type="radio" name="atividade" value="intensa" id="intensa"/>
+                    <label for="intensa">Atividade física intensa</label><br/></div>
+            <button id="calc">CALCULAR</button></div>
+    
+            <!--segunda etapa-->
+            <div class="segundaetapa">
+                <h3>Seu TMB</h3>
+                <input type="number" id="resultado" readonly>
+            </div>
+        </div>
+       
+        
+        <!--terceira etapa-->
+        <div class="terceiraetapa"><h3>3º ETAPA - Como perder peso</h3><br>
+            <p1>O ideal é que não se consumam menos c
+        alorias que o necessário para manter a taxa de metabolismo basal (TMB) por longos períodos</p1><br>
+            <p1>NDC - de 500 a 600 calorias = Quantidade máxima de calorias que pode ser ingerida diariamente</p1><br></div>
+        
+        <!--quarta etapa-->
+        <h3>4º ETAPA - Como ganhar peso</h3><br>
+            <p1>o ideal é que se consuma mais calorias do que o necessário para manter a taxa de metabolismo basal (TMB)
+        por longos períodos<p1></p1><br>
+                <p1>NDC -de 300 a 500 calorias = quantidade máxima que pode ser ingerida diariamente</p1></div>
+    
+    </body>
+    <script src="index.js"></script>
+</html>
