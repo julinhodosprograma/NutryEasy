@@ -67,17 +67,26 @@
 
     <div class="container">
 
-        <div class="form_box">
+        <div class="formbox">
 
             <h2 class="title">Contate-nos</h2>
 
-            <form action="" method="get">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                
 
+                <label>Nome</label>
                 <input type="text" name="name" placeholder="Seu nome">
+                <label>Email</label>
                 <input type="email" name="email" placeholder="Seu E-mail">
+                <label>Assunto</label>
                 <input type="text" name="subject" placeholder="Assunto">
-                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-                <button type="submit">Enviar Mensagem</button>
+                <label>Mensagem</label>
+                <textarea name="message" cols="23" rows="10" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit" value="submit">Enviar Email</button>
+
+                <input type="hidden" name="accessKey" value="4d5c91c8-de2c-471b-bfd2-ed9bc2241719">
+                <input type="hidden" name="redirectTo" value="https://thanks.html">
+                
 
             </form>
 
