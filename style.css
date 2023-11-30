@@ -1,8 +1,9 @@
 .titulo{
     padding: auto;
-    margin: 50px;
+    margin: 30px;
     text-align: center;
     letter-spacing: 2px;
+    padding-bottom: 30px;
 }
 
 #nome{
@@ -62,4 +63,19 @@ input[type="number"]{
 
 .atividades2 > input[type="radio"] {
     margin-left: -0.1vw
+}
+
+@media (orientation: landscape){
+    body {
+    flex-direction: row;
+    }
+}
+
+@media (orientation: portrait){
+    .block {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
