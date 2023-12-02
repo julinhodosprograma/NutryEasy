@@ -1,3 +1,4 @@
+/*nome do site*/
 .titulo{
     padding: auto;
     margin: 30px;
@@ -6,14 +7,11 @@
     padding-bottom: 30px;
 }
 
+/*cor do nome do site no titulo*/
 #nome{
     font-family: "Courier New";
     color: #00cc66;
     letter-spacing: normal;
-}
-
-#letrapequenaatm{
-    font-size: 12px;
 }
 
 body {
@@ -22,6 +20,7 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
+/*cabeçalho do site*/
 header {
     background-color: #55504f;
     margin-left: -0.5%;
@@ -34,6 +33,8 @@ header {
     max-height: 12.5vh;
     box-shadow: 0 0.1vh 1vh #000000;
 }
+
+/*visual calculadora*/
 .block {
     background-color: #54DB40;
     width: 40vw;
@@ -44,6 +45,7 @@ header {
     border-radius: 3%;
 }
 
+/*visual calculadora 2*/
 input[type="number"]{
     background-color: #40FF40;
     border: none;
@@ -51,19 +53,21 @@ input[type="number"]{
     height: 4vh;
 }
 
+/*distaciamento dos elementos calculadora*/
 .calc > h4 {
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-bottom: 1vh;
 }
-
 .calc > input {
     margin-top: 0;
     margin-bottom: 2vh
 }
 
-.atividades2 > input[type="radio"] {
+/*niveis de atividades físicas*/
+.niveis-de-atividades-fisicas > input[type="radio"] {
     margin-left: -0.1vw
 }
+
 
 @media (orientation: landscape){
     body {
@@ -82,6 +86,7 @@ input[type="number"]{
     }
 }
 
+/* formulário de contato*/
 form {
     margin: 0;
     padding: 0;
@@ -99,12 +104,14 @@ form {
     width: 100%;
 }
 
+/* Letras formulário*/
 form label {
     color:#ffffff;
     font-size: 17px;
     margin-bottom: 4px;
 }
 
+/*box respostas formulário*/
 form input {
     padding: 15px;
     outline: none;
@@ -114,6 +121,7 @@ form input {
     transition: all 0.5s;
 }
 
+/* formulário*/
 form textarea {
     padding: 10px;
     outline: none;
@@ -123,6 +131,7 @@ form textarea {
     transition: all 0.5s;
 }
 
+/* botão do formulário */
 form button{
     padding: 15px;
     font-size: 16px;
